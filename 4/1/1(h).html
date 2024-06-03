@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5,6,7,8,9,10]
+let k = 2
+
+let a = (function (x){
+    for(var i=0; i<k; i++){
+        let temp = x[0]
+        for(var j=0; j<x.length-1; j++){
+            x[j] = x[j+1]
+        }
+        x[x.length-1] = temp
+    }
+
+    return x
+})(arr);
+console.log(a)
+    </script>
+</body>
+</html>

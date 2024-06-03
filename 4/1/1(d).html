@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5,6,7,8,9,10]
+        let a = (function (x){
+            let y = []
+            for(var i=0; i<x.length; i++)
+                {
+                    let temp = 0
+                    for(var j=2; j<=x[i]/2; j++)
+                        {
+                            if(x[i]%j==0)
+                            {
+                                temp = 1 
+                                break
+                            }
+                            
+                        }
+                    if(temp==0 && x[i]>1)
+                        y.push(x[i])    
+                }
+            
+            return y
+        })(arr);
+
+        console.log(a)
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = ["This", "is", "guvi", "ZeN", "poRtal"]
+
+const title = (p) => {
+    var y = []
+    for(var i=0; i<p.length; i++)
+        {
+            let z = p[i].split("")
+            for(var j=0; j<z.length; j++)
+                {
+                    if(j == 0)
+                    {
+                        z[j] = z[j].toUpperCase()
+                    }
+                    else
+                    {
+                        z[j] = z[j].toLowerCase()
+                    }
+                }
+            y.push(z.join(""))
+            
+        }
+        console.log(y)
+
+}
+
+title(string)
+    </script>
+</body>
+</html>
