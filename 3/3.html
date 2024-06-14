@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var req = new XMLHttpRequest();
+    req.open('GET','https://restcountries.com/v3.1/all')
+    req.send()
+    req.onload = function abc(){
+        var data = JSON.parse(req.response)
+        for(i in data)
+        {
+            console.log(`Name of ${parseInt(i)+1} country is ${data[i].name.official}. It is situated in ${data[i].subregion} subregion of ${data[i].region} region and has a population of ${data[i].population}`)
+            
+        }
+        
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var req = new XMLHttpRequest();
+    req.open('GET','https://restcountries.com/v3.1/all')
+    req.send()
+    req.onload = function abc(){
+        var data = JSON.parse(req.response)
+        let name = []
+        let capital = []
+        let flag = []
+        data.forEach((x)=>{
+            name.push(x.name.official)
+            capital.push(x.capital)
+            flag.push(x.flag)
+        })
+        console.log(name)
+        console.log(capital)
+        console.log(flag)
+    }
+    </script>
+    
+</body>
+</html>

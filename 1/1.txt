@@ -1,0 +1,7 @@
+Both HTTP/1.1 and HTTP/2 are versions of Hypertext Transfer protocol, used in client-server communication. HTTP/2 being released in 2015 is a better developed version in comparison to HTTP/1.1 which was released in 1997.
+
+Major differences between both are:-
+1.	HTTP/1.1 uses textual format while HTTP/2 works on the binary protocol
+2.	HTTP/1.1 can cater only one request at a time, thus it blocks all the request behind the current request, until the current request doesn't get all the resources and is fulfilled. On the other hand HTTP/2 allows multiplexing, thus can cater multiple request at same time.
+3.	For the requests that require multiple pages, HTTP/1.1 uses resource inlining while HTTP/2 uses PUSH frame which is comparatively faster
+4. 	Data compression in HTTP/1.1 is done by itself while in HTTP/2, HPACK is used for the same

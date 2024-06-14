@@ -1,0 +1,13 @@
+Objects are a very important data types in JavaScript. Unlike primitive data types, which contain only one type of value, Objects can hold many values in form of 'Key: value pair'. These keys are called properties and methods, respectively, in the context of an object.
+
+
+let resume = {
+    Name : "Shivang Agarwal",
+    DOB : "26th May",
+    Education : "M.Tech",
+    Skills : '["JS","Java","C++","Python"]'
+}
+
+Here, Name, DOB, Education & Skills are the keys of the object - 'resume' and each key holds its respective values.
+
+The values of the object can be accessed using square brackets, for example resume[Name] will return "Shivang Agarwal". Loops can also be used to iterate through object and access its key:value pairs
